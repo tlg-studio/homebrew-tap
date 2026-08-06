@@ -5,20 +5,20 @@
 class Lambent < Formula
   desc "File work into Lambent and close the questions loop, from your terminal."
   homepage "https://app.lambentlabs.ai"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tlg-studio/homebrew-tap/releases/download/v0.1.0/lambent_0.1.0_darwin_amd64.tar.gz"
-      sha256 "781af985ddd1a9d470df29613b2b02d9b21b1fbd927c2c3db4873b84bc743f58"
+      url "https://github.com/tlg-studio/homebrew-tap/releases/download/v0.2.0/lambent_0.2.0_darwin_amd64.tar.gz"
+      sha256 "0689e301a1f61f67c167d0605bcf794aea310ec7b05af0de4d83ebd1cc0dcb11"
 
       define_method(:install) do
         bin.install "lambent"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tlg-studio/homebrew-tap/releases/download/v0.1.0/lambent_0.1.0_darwin_arm64.tar.gz"
-      sha256 "33399de2616311cbd18ff3cce003346c766fa219cd2a4b25ad8610ae8554ffe9"
+      url "https://github.com/tlg-studio/homebrew-tap/releases/download/v0.2.0/lambent_0.2.0_darwin_arm64.tar.gz"
+      sha256 "f1685b2a1c4933a292ae2623b70aa0f147c197b53a95de211cdcdb8418015560"
 
       define_method(:install) do
         bin.install "lambent"
@@ -28,15 +28,15 @@ class Lambent < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tlg-studio/homebrew-tap/releases/download/v0.1.0/lambent_0.1.0_linux_amd64.tar.gz"
-      sha256 "aa1cbf85772a039dcf31cf0dd54154f4a175910ad7eb2ec6cf146f2d10008ce9"
+      url "https://github.com/tlg-studio/homebrew-tap/releases/download/v0.2.0/lambent_0.2.0_linux_amd64.tar.gz"
+      sha256 "0b5ee27f5aa9293787bd6776fb7b5ee750d137c8513db78770daf29886b8a6a8"
       define_method(:install) do
         bin.install "lambent"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tlg-studio/homebrew-tap/releases/download/v0.1.0/lambent_0.1.0_linux_arm64.tar.gz"
-      sha256 "4de182b57075137f9a41493d58d1dde73e040fcf7de1b7a1cf3639dc993182a0"
+      url "https://github.com/tlg-studio/homebrew-tap/releases/download/v0.2.0/lambent_0.2.0_linux_arm64.tar.gz"
+      sha256 "63f0c0af796f7e914447a6d42574a0cbbd503dc7b924e9de61164148dce35584"
       define_method(:install) do
         bin.install "lambent"
       end
